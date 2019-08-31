@@ -1,0 +1,11 @@
+LinkedHashMap可以保证HashMap集合有序，存入的顺序和取出的顺序一致。
+
+TreeMap实现SortMap接口，能够把它保存的记录根据键排序,默认是按键值的升序排序，也可以指定排序的比较器，
+当用Iterator遍历TreeMap时，得到的记录是排过序的。
+
+HashMap不保证顺序，即为无序的，具有很快的访问速度。 
+HashMap最多只允许一条记录的键为Null;允许多条记录的值为 Null。 HashMap不支持线程的同步。
+
+我们在开发的过程中使用HashMap比较多，在Map中在Map 中插入、删除和定位元素，HashMap 是最好的选择。
+但如果您要按自然顺序或自定义顺序遍历键，那么TreeMap会更好。
+如果需要输出的顺序和输入的相同,那么用LinkedHashMap 可以实现,它还可以按读取顺序来排列。
