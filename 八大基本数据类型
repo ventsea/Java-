@@ -1,0 +1,12 @@
+基本类型  大小    默认值
+byte    1字节   (byte)0
+short   2字节   (short)0
+int     4字节   0
+long    8字节   0L
+
+float   4字节   0.0f
+double  8字节   0.0d
+
+boolean -      false
+
+char    2字节   'u0000'
