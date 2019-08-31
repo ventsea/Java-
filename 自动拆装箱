@@ -1,0 +1,5 @@
+自动装箱是将一个java定义的基本数据类型赋值给相应封装类的变量。
+拆箱与装箱是相反的操作，自动拆箱则是将一个封装类的变量赋值给相应基本数据类型的变量。
+
+八种基本数据类型：boolean byte char shrot int long float double，所生成的变量相当于常量。
+基本类型包装类：Boolean Byte Character Short Integer Long Float Double。
