@@ -1,0 +1,16 @@
+堆内存溢出 OutOfMemoryError（OOM）
+
+除了程序计数器外，虚拟机内存的其他几个运行时区域都有发生OutOfMemoryError(OOM)异常的可能。
+
+Java Heap 溢出。 一般的异常信息：java.lang.OutOfMemoryError:Java heap spacess。 
+java堆用于存储对象实例，我们只要不断的创建对象，并且保证GC Roots到对象之间有可达路径来避免垃圾回收机制清除这些对象，
+就会在对象数量达到最大堆容量限制后产生内存溢出异常。
+
+堆栈溢出 StackOverflow （SOF）
+
+StackOverflowError 的定义： 当应用程序递归太深而发生堆栈溢出时，抛出该错误。 
+因为栈一般默认为1-2m，一旦出现死循环或者是大量的递归调用，在不断的压栈过程中，造成栈容量超过1m而导致溢出。
+
+栈溢出的原因：
+
+递归调用。 大量循环或死循环。 全局变量是否过多。 数组、List、map数据过大。
